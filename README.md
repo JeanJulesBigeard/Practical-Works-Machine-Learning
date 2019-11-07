@@ -20,6 +20,10 @@ TP4 - Various uses of k-means by Thomas Bonald.
 
 Course and informations can be found [here](https://perso.telecom-paristech.fr/bonald/Home_page.html).
 
+TP7 - Time series by Pavlo Mozharovskyi.
+
+Course and informations can be found [here](https://perso.telecom-paristech.fr/mozharovskyi/index.php/teaching/).
+
 ## Learning for robotics:
 
 TP1 - kNN from scratch on [Breast cancer Wisconsin - Diagnosis](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
