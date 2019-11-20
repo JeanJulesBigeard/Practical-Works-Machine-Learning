@@ -1,0 +1,50 @@
+MIRO – Minimum Information for Reporting of an Ontology
+
+/!\ Also available in the report.
+
+A-Basics
+A-1 Ontology Name: coralreefs: Coral_Reef_Jean_Jules_Bigeard_Tine_Rey.
+A-2 Ontology owner: Bigeard Jean-Jules and Tina rey.
+A-3 Ontology License: MIT.
+A-4 Ontology URL: https://github.com/JeanJulesBigeard/Practical-Works/blob/master/Logic/Coral_Reef_Jean_Jules_Bigeard_Tine_Rey.owl.
+A-5 Ontology repository: https://github.com/JeanJulesBigeard/Practical-Works/tree/master/Logic
+A-6 Methodological framework:The methodology is available in the report.
+
+B-Motivation
+B-1 Need: We all know about the coral reef issue but we do not have a a detailed knowledge about  the causes of it, especially land-based causes and what we could do to improve the situation. 
+B-2 Competition: For what we know, it is the first ontology on the subject.
+B-3 Target audience: It concerns everyone who wants to know more about coral reef destruction and to act against it. 
+
+C-Scope, requirements, development community
+C-1 Scope and coverage: from the site https://oceanservice.noaa.gov/facts/coral-pollution.html.
+C-2 Development community: National Ocean Service.
+C-3 Communication: jeanjules.bigeard@gmail.com.
+
+D-Knowledge acquisition
+D-1 Knowledge acquisition methodology: from the graph. https://aamboceanservice.blob.core.windows.net/oceanservice-prod/facts/coral-pollution.pdf.
+D-2 Source knowledge location: from the site https://oceanservice.noaa.gov/facts/coral-pollution.html.
+D-3 Content selection: The content is detailed in the transcript of the document we used.
+
+E-Ontology content
+E-1 Knowledge representation language: We used OWL version 2.
+E-2 Development environment: Protege 5.5.0.
+E-3 Ontology metrics: This info is available in the part 7-/ of the ontology report.
+E-4 Incorporation of other ontology: None.
+E-5 Entity naming convention: Naming convention is available in the ontology report.
+E-6 Identifier generation policy: Using suffix TODO for action to take.
+E-7 Entity metadata policy: Each class have a textual definition as comment.
+E-8 Upper ontology: None, there is no ontology related to this subject.
+E-9 Ontology relationships: Relationships are represented on part 3-/ and 4-/ of the report.
+E-10 Axiom patterns: Patterns are explained through an example in part 3-/ and 4-/.
+
+F-Managing change
+F-1 Sustainability plan: No particular sustainability plan.
+F-2 Entity deprecation strategy: Deprecated classes should be labeled as obsolete with an annotion.
+F-3 Versioning policy: https://github.com/JeanJulesBigeard/Practical-Works/blob/master/Logic/Coral_Reef_Jean_Jules_Bigeard_Tine_Rey.owl.
+
+G-Quality assurance
+G-1 Testing: Thanks to the ontology, we had a better view on the problem and how each land-based activity is acting on the coral reef and precisely how it is acting on it.
+G-2 Evaluation: Visualization on the OwlViz plugin offer a way to check if our ontology is coherent with our support information.
+G-3 Example of use: An example of use is to check which activities are the most harmful for the coral reef or which ones are the less well known to produce focus awareness campaign. 
+G-4 Institutional endorsement: None
+G-5 evidence of use: None but an awareness campaign using the less well known activities and the most harmful is a good idea.
