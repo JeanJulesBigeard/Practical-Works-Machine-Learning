@@ -1,0 +1,1060 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jean/ontologies/coralreefs#"
+     xml:base="http://www.semanticweb.org/jean/ontologies/coralreefs"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs">
+        <rdfs:comment>Ontology on the land based coral reef pollution.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IsConsequenceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PriorityLevelValuePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IsSolutionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#IsConsequenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#IsConsequenceOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#IsSolutionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#IsSolutionOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pollution#Pathogens -->
+
+    <owl:Class rdf:about="http://pollution#Pathogens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+        <rdfs:comment>Pathogen pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://pollution#Sedimentation -->
+
+    <owl:Class rdf:about="http://pollution#Sedimentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+        <rdfs:comment>Sedimentation pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IsSolutionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Actions to take in order to addres the problem.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Agriculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Agriculture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Sedimentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#DisposeOfLawnClippingsInCompostTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#DisposeOfLawnClippingsInCompostTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Everything related with agriculture.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ChemicalSpills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ChemicalSpills">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Spills of chimical products and processes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#CoastalDevelopment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#CoastalDevelopment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Sedimentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ProtectLittoralTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ProtectLittoralTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Construction on the littoral.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Deforestation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Deforestation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Sedimentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ReplantTreesTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReplantTreesTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Intensive use of forests to product wood and create space.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#DisposeOfLawnClippingsInCompostTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#DisposeOfLawnClippingsInCompostTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO"/>
+        <rdfs:comment>Dispose of lawn clippings in compost.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#FailedSepticSystems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#FailedSepticSystems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Pathogens"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#MaintainProperSepticSystemTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#MaintainProperSepticSystemTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Non-conform septic systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#HarvestRooftopRainWaterTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HarvestRooftopRainWaterTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO"/>
+        <rdfs:comment>Harvest rooftop rain water to re-use it.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PriorityLevelValuePartition"/>
+        <rdfs:comment>High priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#HighPriorityType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HighPriorityType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities with high priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO"/>
+        <rdfs:comment>Industrial actions to take</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Land based types of activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PriorityLevelValuePartition"/>
+        <rdfs:comment>Low priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#LowAwarenessScore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LowAwarenessScore">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities with low awareness score.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#LowPriorityType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LowPriorityType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Low"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities with low priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#MaintainProperSepticSystemTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#MaintainProperSepticSystemTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO"/>
+        <rdfs:comment>Maintain proper septic systems and inspect it regularly.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PriorityLevelValuePartition"/>
+        <rdfs:comment>Medium priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#MediumPriorityType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#MediumPriorityType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities with medium priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#NutrientPollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#NutrientPollution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities creating nutrient pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+        <rdfs:comment>Nutrient pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#PathogenPollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#PathogenPollution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                        <owl:someValuesFrom rdf:resource="http://pollution#Pathogens"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities creating pathogen pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake"/>
+        <rdfs:comment>Personnal actions to take.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType">
+        <rdfs:comment>Type of pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#PriorityLevelValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#PriorityLevelValuePartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Low"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ValuePartition"/>
+        <rdfs:comment>Value partition to inform on the priority level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ProtectLittoralTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ProtectLittoralTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO"/>
+        <rdfs:comment>Protect the littoral from constructions and developpement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO"/>
+        <rdfs:comment>Reduce the use of fertilizers and pesticides.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ReplantTreesTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReplantTreesTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO"/>
+        <rdfs:comment>Replant trees in availabe areas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO"/>
+        <rdfs:comment>Respect the reglementation for harmful industrial chemicals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#RoadConstruction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RoadConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Sedimentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Everything related with road contruction (concrete + building + transportation).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#IndustrialTODO"/>
+        <rdfs:comment>Save water in production process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#SedimentationPollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SedimentationPollution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                        <owl:someValuesFrom rdf:resource="http://pollution#Sedimentation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities creating sedimentation pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#StormwaterRunoff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#StormwaterRunoff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Pathogens"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://pollution#Sedimentation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Low"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HarvestRooftopRainWaterTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HarvestRooftopRainWaterTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Storm water runoff which drag all the pollution from the land.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Sunscreens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Sunscreens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasPriorityLevel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#SunscreensWithFewChemicalsTODO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasSolution"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SunscreensWithFewChemicalsTODO"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasAwarenessScore"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Use of sunscreens on the beach.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#SunscreensWithFewChemicalsTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SunscreensWithFewChemicalsTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO"/>
+        <rdfs:comment>Use sunscreens with few chemicals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ToxinPollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ToxinPollution">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#HasConsequence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities creating toxin pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+        <rdfs:comment>Toxin pollution.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ValuePartition">
+        <rdfs:comment>Create some value partition to detail the ontology.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jean/ontologies/coralreefs#WashYourCarOnYourLawnTODO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#WashYourCarOnYourLawnTODO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jean/ontologies/coralreefs#PersonnalTODO"/>
+        <rdfs:comment>Wash your car on your lawn.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://pollution#Pathogens"/>
+            <rdf:Description rdf:about="http://pollution#Sedimentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Nutrients"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Toxins"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ActionToTake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#LandBasedType"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#PollutionType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Agriculture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ChemicalSpills"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#CoastalDevelopment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Deforestation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#FailedSepticSystems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RoadConstruction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#StormwaterRunoff"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Sunscreens"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#DisposeOfLawnClippingsInCompostTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#HarvestRooftopRainWaterTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#MaintainProperSepticSystemTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SunscreensWithFewChemicalsTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#WashYourCarOnYourLawnTODO"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#Medium"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ProtectLittoralTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReduceFertilizersAndPesticidesTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#ReplantTreesTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#RespectRegulationForIndustrialChemicalsTODO"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jean/ontologies/coralreefs#SaveWaterInProcessTODO"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
