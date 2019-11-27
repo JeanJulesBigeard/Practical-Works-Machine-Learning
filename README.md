@@ -12,27 +12,31 @@ TP4 - K-means by Thomas Bonald (Various uses).
 
 TP6 - Time series by Pavlo Mozharovskyi.
 
-TP7 - NMF by Slim Essid
+TP7 - NMF by Slim Essid.
 
 Additional PW:
 
-- ICA audio
-- DB-Scan vizu
-- GMM clustering and cluster validation
-- PCA vizu
-- k-means Clustering of Movie Ratings
+- ICA audio.
+- DB-Scan vizu.
+- GMM clustering and cluster validation.
+- PCA vizu.
+- k-means Clustering of Movie Ratings.
 
 ## Reinforcement learning
 
-TP1 - Stochastic-bandits by Thomas Bonald
+TP1 - Stochastic-bandits by Thomas Bonald.
 
 ## Large scale learning
 
-TP1 - Random Projections by Robert Gower
+TP1 - Random Projections by Robert Gower.
+
+## Deep learning
+
+TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Peeters.
 
 ## Logic
 
--Ontology on the land-based pollution of the coral reef in OWL.
+-Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
 
 ## Learning for robotics:
 
