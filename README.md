@@ -14,7 +14,7 @@ TP6 - Time series by Pavlo Mozharovskyi.
 
 TP7 - NMF by Slim Essid.
 
-Additional PW:
+Additional practical work:
 
 - ICA audio.
 - DB-Scan vizu.
