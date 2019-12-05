@@ -34,6 +34,8 @@ TP1 - Random Projections by Robert Gower.
 
 TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Peeters.
 
+TP2 - Recurrent Neural Networks on IMDB with keras by Geoffroy Peeters.
+
 ## Logic
 
 -Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
