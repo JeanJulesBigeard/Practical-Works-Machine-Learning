@@ -36,6 +36,8 @@ TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Pe
 
 TP2 - Recurrent Neural Networks on IMDB with keras by Geoffroy Peeters.
 
+TP3 - Training language model (Many-to-Many) and generating sequences (One-to-Many) using LSTM
+
 ## Logic
 
 -Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
