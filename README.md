@@ -26,6 +26,8 @@ Additional practical work:
 
 TP1 - Stochastic-bandits by Thomas Bonald.
 
+TP2 - Adversarial Bandits by  Pierre Gaillard.
+
 ## Large scale learning
 
 TP1 - Random Projections by Robert Gower.
