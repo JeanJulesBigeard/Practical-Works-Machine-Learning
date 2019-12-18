@@ -32,6 +32,8 @@ TP2 - Adversarial Bandits by  Pierre Gaillard.
 
 TP1 - Random Projections by Robert Gower.
 
+TP2 - Tree search by Thomas Bonald.
+
 ## Deep learning
 
 TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Peeters.
