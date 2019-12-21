@@ -34,6 +34,8 @@ TP1 - Random Projections by Robert Gower.
 
 TP2 - Tree search by Thomas Bonald.
 
+TP3 - FFM and boosting on Avazu dataset by Pascal Bianchi.
+
 ## Deep learning
 
 TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Peeters.
