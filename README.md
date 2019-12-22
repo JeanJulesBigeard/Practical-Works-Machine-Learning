@@ -42,7 +42,11 @@ TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Pe
 
 TP2 - Recurrent Neural Networks on IMDB with keras by Geoffroy Peeters.
 
-TP3 - Training language model (Many-to-Many) and generating sequences (One-to-Many) using LSTM.
+TP3 - Training language model (Many-to-Many) and generating sequences (One-to-Many) using LSTM by Geoffroy Peeters.
+
+TP4 - Coding Convolutional Neural Networks in tensorflow and keras with trained filters outputs by Alasdair Newson.
+
+TP5 - Deep dream to understand what the network is learning and adversarial example to force misclassification by Alasdair Newson.
 
 ## Logic
 
