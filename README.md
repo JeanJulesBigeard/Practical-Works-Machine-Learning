@@ -36,6 +36,8 @@ TP2 - Tree search by Thomas Bonald.
 
 TP3 - FFM and boosting on Avazu dataset by Pascal Bianchi.
 
+TP4 - Sketching and MiniHash by Thomas bonald.
+
 ## Deep learning
 
 TP1 - Multi layer perceptron from scratch with Python and Pytorch by Geoffroy Peeters.
@@ -54,8 +56,7 @@ TP5 - Deep dream to understand what the network is learning and adversarial exam
 
 ## Learning for robotics:
 
-TP1 - kNN from scratch on [Breast cancer Wisconsin - Diagnosis](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
-and on [Haberman Survival Data](https://archive.ics.uci.edu/ml/datasets/Haberman's+Survival).
+TP1 - kNN from scratch.
 
 TP2 - informed state-space search on pacman project from UC Berkeley.
 
