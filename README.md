@@ -50,6 +50,10 @@ TP4 - Coding Convolutional Neural Networks in tensorflow and keras with trained 
 
 TP5 - Deep dream to understand what the network is learning and adversarial example to force misclassification by Alasdair Newson.
 
+## Graphical Models and Bayesian Networks
+
+TP - Restricted Boltzmann Machine by Yohan Petetin.
+
 ## Logic
 
 -Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
