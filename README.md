@@ -28,6 +28,8 @@ TP1 - Stochastic-bandits by Thomas Bonald.
 
 TP2 - Adversarial Bandits by  Pierre Gaillard.
 
+TP3 - Stochastic Linear Bandits by Claire Vernade
+
 TP4 - Monte carlo tree search on connect 4 by Claire Vernade.
 
 ## Large scale learning
