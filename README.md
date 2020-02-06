@@ -14,6 +14,8 @@ TP6 - Time series by Pavlo Mozharovskyi.
 
 TP7 - NMF by Slim Essid.
 
+TP8 - Light gradient boosting
+
 Additional practical work:
 
 - ICA audio.
