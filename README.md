@@ -56,6 +56,10 @@ TP4 - Coding Convolutional Neural Networks in tensorflow and keras with trained 
 
 TP5 - Deep dream to understand what the network is learning and adversarial example to force misclassification by Alasdair Newson.
 
+## Natural Language Processing
+
+TP1 - Sentiment analysis by Mathieu Labeau 
+
 ## Robotics
 
 TP1 - Robot control (Bicycle or Unicylce type) following a specific path and using a dynamic goal by Alexandre Chapoutot.
