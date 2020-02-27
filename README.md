@@ -60,6 +60,12 @@ TP5 - Deep dream to understand what the network is learning and adversarial exam
 
 TP1 - Sentiment analysis by Mathieu Labeau 
 
+## GPU Programming - CUDA
+
+TP1 - Matrix Multiplication by Elisabeth Brunet.
+
+TP2 - Reduction by Elisabeth Brunet.
+
 ## Robotics
 
 TP1 - Robot control (Bicycle or Unicylce type) following a specific path and using a dynamic goal by Alexandre Chapoutot.
