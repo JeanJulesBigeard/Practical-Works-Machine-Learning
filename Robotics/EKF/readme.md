@@ -14,7 +14,7 @@
 
 ![alt text](images/EKF_3.png)
 
-![alt text](images/EKF_4.png)
+![alt text](images/EFK_4.png)
 
 ![alt text](images/ekf_5.png)
 
