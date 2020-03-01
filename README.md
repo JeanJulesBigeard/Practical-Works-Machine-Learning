@@ -70,6 +70,8 @@ TP2 - Reduction by Elisabeth Brunet.
 
 TP1 - Robot control (Bicycle or Unicylce type) following a specific path and using a dynamic goal by Alexandre Chapoutot.
 
+TP2 - EKF by Goran Frehse.
+
 ## Graphical Models and Bayesian Networks
 
 TP - Restricted Boltzmann Machine by Yohan Petetin.
