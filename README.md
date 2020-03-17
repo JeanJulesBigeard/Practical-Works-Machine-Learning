@@ -58,7 +58,9 @@ TP5 - Deep dream to understand what the network is learning and adversarial exam
 
 ## Natural Language Processing
 
-TP1 - Sentiment analysis by Mathieu Labeau 
+TP1 - Sentiment analysis by Mathieu Labeau.
+
+TP3 - Hidden markov model by Laurence Likforman-Sulem.
 
 ## GPU Programming - CUDA
 
