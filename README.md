@@ -34,6 +34,8 @@ TP3 - Stochastic Linear Bandits by Claire Vernade
 
 TP4 - Monte carlo tree search on connect 4 by Claire Vernade.
 
+TP5 - Q-learning by Thomas Bonald.
+
 ## Large scale learning
 
 TP1 - Random Projections by Robert Gower.
