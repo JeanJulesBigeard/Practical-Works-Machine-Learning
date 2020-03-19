@@ -68,6 +68,8 @@ TP1 - Matrix Multiplication by Elisabeth Brunet.
 
 TP2 - Reduction by Elisabeth Brunet.
 
+TP3 - Classification by Goran Frehse.
+
 ## Robotics
 
 TP1 - Robot control (Bicycle or Unicylce type) following a specific path and using a dynamic goal by Alexandre Chapoutot.
