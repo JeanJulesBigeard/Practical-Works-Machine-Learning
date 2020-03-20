@@ -72,6 +72,12 @@ TP2 - Reduction by Elisabeth Brunet.
 
 TP3 - Classification by Goran Frehse.
 
+## Generative models and domain adaptation
+
+TP1 - Variational autoencoder (VAE) by Stéphane Lathuilière.
+
+TP2 - Generative adversarial network (GAN) by Stéphane Lathuilière.
+
 ## Robotics
 
 TP1 - Robot control (Bicycle or Unicylce type) following a specific path and using a dynamic goal by Alexandre Chapoutot.
