@@ -36,6 +36,10 @@ TP4 - Monte carlo tree search on connect 4 by Claire Vernade.
 
 TP5 - Q-learning by Thomas Bonald.
 
+Mini project:
+
+- TicTacToe using [AlphaZero](https://arxiv.org/abs/1712.01815).
+
 ## Large scale learning
 
 TP1 - Random Projections by Robert Gower.
