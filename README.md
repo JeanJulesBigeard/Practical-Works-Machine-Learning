@@ -40,6 +40,8 @@ Mini project:
 
 - TicTacToe using [AlphaZero](https://arxiv.org/abs/1712.01815).
 
+- Dynamic programming on OpenAI gym [frozen lake](https://gym.openai.com/envs/FrozenLake-v0/). 
+
 ## Large scale learning
 
 TP1 - Random Projections by Robert Gower.
