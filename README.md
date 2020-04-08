@@ -70,6 +70,10 @@ TP1 - Sentiment analysis by Mathieu Labeau.
 
 TP3 - Hidden markov model by Laurence Likforman-Sulem.
 
+## Multimodal Dialogue
+
+TP1 - Dynamic Time Warping for Speech Recognition by Mathieu Labeau
+
 ## GPU Programming - CUDA
 
 TP1 - Matrix Multiplication by Elisabeth Brunet.
