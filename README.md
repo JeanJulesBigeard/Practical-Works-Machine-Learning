@@ -90,6 +90,8 @@ TP1 - Robot control (Bicycle or Unicylce type) following a specific path and usi
 
 TP2 - EKF by Goran Frehse.
 
+TP3 - Monte Carlo Localization by Goran Frehse.
+
 ## Graphical Models and Bayesian Networks
 
 TP - Restricted Boltzmann Machine by Yohan Petetin.
