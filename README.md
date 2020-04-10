@@ -96,6 +96,8 @@ TP2 - EKF by Goran Frehse.
 
 TP3 - Monte Carlo Localization by Goran Frehse.
 
+TP4 - SLAM by Goran Frehse.
+
 ## Graphical Models and Bayesian Networks
 
 TP - Restricted Boltzmann Machine by Yohan Petetin.
