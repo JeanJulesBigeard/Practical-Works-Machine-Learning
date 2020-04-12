@@ -1,4 +1,4 @@
-# Practical-Work
+# Practical-Works
 
 ## Statistical learning:
 
@@ -14,9 +14,11 @@ TP6 - Time series by Pavlo Mozharovskyi.
 
 TP7 - NMF by Slim Essid.
 
-TP8 - Light gradient boosting
+TP8 - Light gradient boosting.
 
-Additional practical work:
+TP9 - Graph theory.
+
+Additional practical works:
 
 - ICA audio.
 - DB-Scan vizu.
@@ -69,6 +71,8 @@ TP5 - Deep dream to understand what the network is learning and adversarial exam
 TP1 - Sentiment analysis by Mathieu Labeau.
 
 TP3 - Hidden markov model by Laurence Likforman-Sulem.
+
+TP4 - LSTM in PyTorch.
 
 ## Multimodal Dialogue
 
