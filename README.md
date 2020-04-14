@@ -86,6 +86,8 @@ TP2 - Reduction by Elisabeth Brunet.
 
 TP3 - Classification by Goran Frehse.
 
+TP4 - Backpropagation by Goran Frehse. 
+
 ## Generative models and domain adaptation
 
 TP1 - Variational autoencoder (VAE) by Stéphane Lathuilière.
