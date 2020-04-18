@@ -76,7 +76,9 @@ TP4 - LSTM in PyTorch.
 
 ## Multimodal Dialogue
 
-TP1 - Dynamic Time Warping for Speech Recognition by Mathieu Labeau
+TP1 - Dynamic Time Warping for Speech Recognition by Mathieu Labeau.
+
+TP2 - Expressive gesture recognition by Giovanna Varni.
 
 ## GPU Programming - CUDA
 
