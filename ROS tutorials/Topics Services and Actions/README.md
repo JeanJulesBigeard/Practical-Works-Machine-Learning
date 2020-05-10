@@ -23,12 +23,17 @@ Create a package in order to print the odometry of the robot:
 #### Laser scan command
 
 1 - Create a Publisher that writes into the /cmd_vel topic in order to move the robot.
+
 2 - Create a Subscriber that reads from the /kobuki/laser/scan topic. This is the topic where the laser publishes its data.
+
 3 - Depending on the readings you receive from the laser's topic, you'll have to change the data you're sending to the /cmd_vel topic in order to avoid the wall. This means, use the values of the laser to decide.
 
 The logic that your program has to follow is the next one:
 
 If the laser reading in front of the robot is higher than 1 meter (there is no obstacle closer than 1 meter in front of the robot), the robot will move forward.
+
 If the laser reading in front of the robot is lower than 1 meter (there is an obstacle closer than 1 meter in front of the robot), the robot will turn left.
+
 If the laser reading at the right side of the robot is lower than 1 meter (there is an obstacle closer than 1 meter at the right side of the robot), the robot will turn left.
+
 If the laser reading at the left side of the robot is lower than 1 meter (there is an obstacle closer than 1 meter at the left side of the robot), the robot will turn right.
