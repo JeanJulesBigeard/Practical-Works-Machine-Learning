@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>simple_topic_publisher</name>
+  <version>0.0.0</version>
+  <description>The simple_topic_publisher package</description>
+
+
+  <maintainer email="user@todo.todo">user</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+
+
+  <export>
+
+  </export>
+</package>
