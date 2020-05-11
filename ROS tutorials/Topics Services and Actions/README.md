@@ -37,3 +37,23 @@ If the laser reading in front of the robot is lower than 1 meter (there is an ob
 If the laser reading at the right side of the robot is lower than 1 meter (there is an obstacle closer than 1 meter at the right side of the robot), the robot will turn left.
 
 If the laser reading at the left side of the robot is lower than 1 meter (there is an obstacle closer than 1 meter at the left side of the robot), the robot will turn right.
+
+#### unit_4_services
+
+Create a node calling the /execute_trajectory service to move the arm on a trajectory in a file.
+
+First of all, create a package to place all the future code. For better future reference, you can call it unit_4_services, with dependencies rospy and iri_wam_reproduce_trajectory.
+
+Create a launch called my_robot_arm_demo.launch, that starts the /execute_trajectory service. As explained in the Example 4.3, this service is launched by the launch file start_service.launch, which is in the package iri_wam_reproduce_trajectory.
+
+Get information of what type of service message does this /execute_trajectory service uses, as explained in Example 4.6.
+
+Make the robotic arm move following a trajectory, which is specified in a file.
+
+Modify the previous code of Example 4.5, which called the /trajectory_by_name service, to call now the /execute_trajectory service instead. The new Python file could be called exercise_4_1.py, for future reference.
+
+Here you have the code necessary to get the path to the trajectory files based on the package where they are. Here, the trajectory file get_food.txt is selected, but you can use any of the available in the config folder of the iri_wam_reproduce_trajectory package.
+
+Modify the main launch file my_robot_arm_demo.launch, so that now it also launches the Python code you have just created in exercise_4_1.py.
+
+Finally, execute the my_robot_arm_demo.launch file and see how the robot performs the trajectory.
