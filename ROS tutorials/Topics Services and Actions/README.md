@@ -57,3 +57,19 @@ Here you have the code necessary to get the path to the trajectory files based o
 Modify the main launch file my_robot_arm_demo.launch, so that now it also launches the Python code you have just created in exercise_4_1.py.
 
 Finally, execute the my_robot_arm_demo.launch file and see how the robot performs the trajectory.
+
+#### Services quiz:
+
+The name of the package where you'll place all the code related to the quiz will be services_quiz.
+
+The name of the launch file that will start your Service Server will be start_bb8_move_custom_service_server.launch.
+
+The name of the service will be /move_bb8_in_square_custom.
+
+The name of your Service message file will be BB8CustomServiceMessage.srv.
+
+The Service message file will be placed at the services_quiz package, as indicated in the 1st point.
+
+The name of the launch file that will start your Service Client will be call_bb8_move_in_square_custom_service_server.launch (This launch file doesn't have to start the Service Server, only the Service Client).
+
+The small square has to be of, at least, 1 sqm. The big square has to be of, at least, 2 sqm.
