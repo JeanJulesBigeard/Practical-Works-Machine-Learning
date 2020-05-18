@@ -68,7 +68,7 @@ TP5 - Deep dream to understand what the network is learning and adversarial exam
 
 ## Computer Vision
 
-TP1 - Low level segmentation and morphological transformation by Gianni Franchi
+TP1 - Low level segmentation and morphological transformation by Gianni Franchi.
 
 ## Natural Language Processing
 
