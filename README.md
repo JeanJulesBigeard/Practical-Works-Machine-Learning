@@ -66,6 +66,10 @@ TP4 - Coding Convolutional Neural Networks in tensorflow and keras with trained 
 
 TP5 - Deep dream to understand what the network is learning and adversarial example to force misclassification by Alasdair Newson.
 
+## Computer Vision
+
+TP1 - Low level segmentation and morphological transformation by Gianni Franchi
+
 ## Natural Language Processing
 
 TP1 - Sentiment analysis by Mathieu Labeau.
