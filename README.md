@@ -1,6 +1,6 @@
-# Practical-Works
+# Practical-Works:
 
-## Statistical learning:
+## Statistical learning
 
 TP1 - Stochastic gradient and perceptron by Pavlo Mozharovskyi.
 
@@ -122,7 +122,11 @@ TP - Restricted Boltzmann Machine by Yohan Petetin.
 
 - Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
 
-## Learning for robotics:
+## Constraint programming
+
+TP1 - Sudoku solving algorithm by Julien Alexandre dit Sandretto.
+
+## Learning for robotics
 
 TP1 - kNN from scratch.
 
