@@ -73,3 +73,11 @@ The Service message file will be placed at the services_quiz package, as indicat
 The name of the launch file that will start your Service Client will be call_bb8_move_in_square_custom_service_server.launch (This launch file doesn't have to start the Service Server, only the Service Client).
 
 The small square has to be of, at least, 1 sqm. The big square has to be of, at least, 2 sqm.
+
+#### Action client to move a drone
+
+1) You can send Twist commands to the quadcopter in order to move it. These commands have to be published in **/cmd_vel** topic. Remember the **TopicsUnit**.
+
+2) You must send movement commands while waiting until the result is received, creating a loop that sends commands at the same time that check for completion. In order to be able to send commands while the action is in progress, you need to use the SimpleActionClient function **get_state()**.
+
+3) Also, take into account that in some cases, the 1st message published into a topic may fail (because the topic connections are not ready yet). It's important to bear this in mind specially for **taking off/landing** the drone, since it's based in a single publication into the corresponding topics.
