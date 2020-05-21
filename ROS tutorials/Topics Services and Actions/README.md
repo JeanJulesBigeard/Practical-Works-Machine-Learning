@@ -74,7 +74,7 @@ The name of the launch file that will start your Service Client will be call_bb8
 
 The small square has to be of, at least, 1 sqm. The big square has to be of, at least, 2 sqm.
 
-#### Action client to move a drone
+#### Action client to move a drone:
 
 1) You can send Twist commands to the quadcopter in order to move it. These commands have to be published in **/cmd_vel** topic. Remember the **TopicsUnit**.
 
@@ -82,7 +82,7 @@ The small square has to be of, at least, 1 sqm. The big square has to be of, at 
 
 3) Also, take into account that in some cases, the 1st message published into a topic may fail (because the topic connections are not ready yet). It's important to bear this in mind specially for **taking off/landing** the drone, since it's based in a single publication into the corresponding topics.
 
-####  Package with Action Server that moves the AR.Drone in the air, making a square
+####  Package with Action Server that moves the AR.Drone in the air, making a square:
 
 a) Create a package with an action server that makes the drone move in a square when called.
 
@@ -94,3 +94,17 @@ The size of the side of the square should be specified in the goal message as an
 The feedback should publish the current side (as a number) the robot is at while doing the square.
 The result should publish the total number of seconds it took the drone to do the square
 Use the Test.action message for that action server. Use the shell command find /opt/ros/kinetic/ -name Test.action to find where that message is defined. Then, analyze the different fields of the msg in order to learn how to use it in your action server. As you can see its in the package actionlib
+
+#### Actions quizz:
+
+Create a Package with an action server with custom action message to move ardone.
+
+The new action server will receive two words as a goal: TAKEOFF or LAND.
+
+When the action server receives the TAKEOFF word, the drone will take off.
+
+When the action server receives the LAND word, the drone will land.
+
+As a feedback, it publishes once a second what action is taking place (taking off or landing).
+
+When the action finishes, the result will return nothing.
