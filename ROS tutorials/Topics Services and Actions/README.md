@@ -81,3 +81,16 @@ The small square has to be of, at least, 1 sqm. The big square has to be of, at 
 2) You must send movement commands while waiting until the result is received, creating a loop that sends commands at the same time that check for completion. In order to be able to send commands while the action is in progress, you need to use the SimpleActionClient function **get_state()**.
 
 3) Also, take into account that in some cases, the 1st message published into a topic may fail (because the topic connections are not ready yet). It's important to bear this in mind specially for **taking off/landing** the drone, since it's based in a single publication into the corresponding topics.
+
+####  Package with Action Server that moves the AR.Drone in the air, making a square
+
+a) Create a package with an action server that makes the drone move in a square when called.
+
+b) Call the action server through the topics and observe the result and feedback.
+
+c) Your code should move the drone while taking pictures.
+
+The size of the side of the square should be specified in the goal message as an integer.
+The feedback should publish the current side (as a number) the robot is at while doing the square.
+The result should publish the total number of seconds it took the drone to do the square
+Use the Test.action message for that action server. Use the shell command find /opt/ros/kinetic/ -name Test.action to find where that message is defined. Then, analyze the different fields of the msg in order to learn how to use it in your action server. As you can see its in the package actionlib
