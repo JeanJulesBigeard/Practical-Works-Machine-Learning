@@ -72,6 +72,8 @@ TP1 - Low level segmentation and morphological transformation by Gianni Franchi.
 
 TP2 - Curse of dimensionality, PCA and Harris descriptors by Gianni Franchi.
 
+TP3 - Gender classifier by Stephane Gentric.
+
 ## Natural Language Processing
 
 TP1 - Sentiment analysis by Mathieu Labeau.
