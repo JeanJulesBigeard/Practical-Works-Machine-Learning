@@ -72,7 +72,9 @@ TP1 - Low level segmentation and morphological transformation by Gianni Franchi.
 
 TP2 - Curse of dimensionality, PCA and Harris descriptors by Gianni Franchi.
 
-TP3 - Gender classifier by Stephane Gentric.
+TP3 - Gender classifier and advesarial attack by Stephane Gentric.
+
+TP4 - Spatial transformer network from PyTorch tutorials. 
 
 ## Natural Language Processing
 
