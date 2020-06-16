@@ -132,6 +132,10 @@ TP - Restricted Boltzmann Machine by Yohan Petetin.
 
 TP1 - Sudoku solving algorithm by Julien Alexandre dit Sandretto.
 
+TP2 - Procedure de decision simple by Alexandre Chapoutot.
+
+TP3 - DPLL and WalkSAT by Alexandre Chapoutot.
+
 ## Learning for robotics
 
 TP1 - kNN from scratch.
