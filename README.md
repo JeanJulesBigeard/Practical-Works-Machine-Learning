@@ -118,7 +118,7 @@ TP4 - SLAM by Goran Frehse.
 
 ## ROS tutorials
 
-1 - Topics, Services and Actions
+Topics, Services and Actions
 
 ## Graphical Models and Bayesian Networks
 
@@ -126,7 +126,7 @@ TP - Restricted Boltzmann Machine by Yohan Petetin.
 
 ## Logic
 
-- Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
+Project - Ontology on the land-based pollution of the coral reef in OWL with Natalia Diaz.
 
 ## Constraint programming
 
