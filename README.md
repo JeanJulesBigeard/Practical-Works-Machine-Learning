@@ -161,7 +161,7 @@ TP1 - Variational autoencoder (VAE) by Stéphane Lathuilière.
 
 TP2 - Generative adversarial network (GAN) by Stéphane Lathuilière.
 
-Generative Adversarial Networks (GANs) Specialization:
+Generative Adversarial Networks (GANs) Specialization (from coursera):
 - Basic Generative Adversarial Networks (GANs)
 
   Deep Convolutional GAN
