@@ -192,6 +192,8 @@ TP4 - SLAM by Goran Frehse.
 
 Topics, Services and Actions
 
+Robotics - Simple mover tutorial with Gazebo
+
 ## Graphical Models and Bayesian Networks
 
 TP - Restricted Boltzmann Machine by Yohan Petetin.
