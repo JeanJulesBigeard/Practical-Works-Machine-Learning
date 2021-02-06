@@ -66,13 +66,15 @@ TP4 - Coding Convolutional Neural Networks in tensorflow and keras with trained 
 
 TP5 - Deep dream to understand what the network is learning and adversarial example to force misclassification by Alasdair Newson.
 
-AI for medicine specialization (from coursera) - Medical Diagnosis / Medical Prognosis / Medical Treatment.
+Additional practical works:
 
-YOLOv3-implementation on jupyter-notebook.
+- AI for medicine specialization (from coursera) - Medical Diagnosis / Medical Prognosis / Medical Treatment.
 
-Getting-started-with-PyTorch (Tutorial).
+- YOLOv3-implementation on jupyter-notebook.
 
-Facial-keypoints-detection.
+- Getting-started-with-PyTorch (Tutorial).
+
+- Facial-keypoints-detection.
 
 ## Computer Vision
 
