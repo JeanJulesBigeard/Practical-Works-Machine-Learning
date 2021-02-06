@@ -86,6 +86,10 @@ TP3 - Gender classifier and advesarial attack by Stephane Gentric.
 
 TP4 - Spatial transformer network from PyTorch tutorials. 
 
+Mini project:
+
+- Image-Captioning - CNN encoder / RNN decoder
+
 ## Natural Language Processing
 
 TP1 - Sentiment analysis by Mathieu Labeau.
