@@ -98,46 +98,9 @@ TP3 - Hidden markov model by Laurence Likforman-Sulem.
 
 TP4 - LSTM in PyTorch.
 
-NLP specialization (from coursera):
-- Natural Language Processing with Classification and Vector Spaces.
+Additional work:
 
-  Logistic Regression for Sentiment Analysis of Tweets
-  
-  Naïve Bayes for Sentiment Analysis of Tweets
-  
-  Vector Space Models
-  
-  Word Embeddings and Locality Sensitive Hashing for Machine Translation
-  
-- Natural Language Processing with Probabilistic Models.
-
-  Auto-correct using Minimum Edit Distance
-  
-  Part-of-Speech (POS) Tagging
-  
-  N-gram Language Models
-  
-  Word2Vec and Stochastic Gradient Descent
-  
-- Natural Language Processing with Sequence Models.
-
-  Sentiment with Neural Nets
-  
-  Language Generation Models
-  
-  Named Entity Recognition (NER)
-  
-  Siamese Networks
-  
-- Natural Language Processing with Attention Models.
-
-  Neural Machine Translation with Attention
-  
-  Summarization with Transformer Models
-  
-  Question-Answering with Transformer Models
-  
-  Chatbots with a Reformer Model
+  - NLP specialization (from coursera)
         
 ## Multimodal Dialogue
 
@@ -161,28 +124,9 @@ TP1 - Variational autoencoder (VAE) by Stéphane Lathuilière.
 
 TP2 - Generative adversarial network (GAN) by Stéphane Lathuilière.
 
-Generative Adversarial Networks (GANs) Specialization (from coursera):
-- Basic Generative Adversarial Networks (GANs)
+Adiitional work:
 
-  Deep Convolutional GAN
-  
-  Wasserstein GANs with Normalization
-  
-  Conditional and Controllable GANs
-  
-- Better Generative Adversarial Networks (GANs)
-
-  GAN Evaluation
-  
-  StyleGAN and Advancements
-  
-- Apply Generative Adversarial Networks (GANs)
-
-   GANs for Data Augmentation and Privacy Preservation
-   
-   Image-to-Image Translation
-   
-   Image-to-Image Unpaired Translation
+  - Generative Adversarial Networks (GANs) Specialization (from coursera):
 
 ## Robotics
 
