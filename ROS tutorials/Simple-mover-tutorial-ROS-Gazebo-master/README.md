@@ -8,7 +8,7 @@ Info on how to run the simulation can be find on the [tutorial github](https://g
 
 The goal of the `simple_mover` node is to command each joint in the simple arm and make it swing between -pi/2 to pi/2 over time.
 
-![alt text](https://github.com/JeanJulesBigeard/Simple-mover-tutorial/blob/master/Images/Screenshot%20from%202019-11-25%2019-54-08.png)
+![alt text](https://github.com/JeanJulesBigeard/Practical-Works-Machine-Learning/blob/master/ROS%20tutorials/Simple-mover-tutorial-ROS-Gazebo-master/Images/Screenshot%20from%202019-11-25%2019-54-08.png)
 
 -> Topics:
 
@@ -81,7 +81,7 @@ In addition to allowing movements via a service interface, `arm_mover` also allo
 
 NB: An interaction with a service consists of two messages. A node passes a request message to the service, and the service returns a response message to the node. The definitions of the request and response message types are contained within .srv files living in the srv directory under the package’s root.
 
-![alt text](https://github.com/JeanJulesBigeard/Simple-mover-tutorial/blob/master/Images/screen-shot-2018-10-30-at-11.33.36-am.png)
+![alt text](https://github.com/JeanJulesBigeard/Practical-Works-Machine-Learning/blob/master/ROS%20tutorials/Simple-mover-tutorial-ROS-Gazebo-master/Images/screen-shot-2018-10-30-at-11.33.36-am.png)
 
 Service definitions always contain two sections, separated by a ‘---’ line. The first section is the definition of the request message. Here, a request consists of two float64 fields, one for each of `simple_arm`’s joints. The second section contains the service response. The response contains only a single field, `msg_feedback`. The msg_feedback field is of type string, and is responsible for indicating that the arm has moved to a new position.
 
@@ -181,7 +181,7 @@ By setting the `max_joint_2_angle` on the parameter server, we should be able to
 ```shell
 $ rosparam set /arm_mover/max_joint_2_angle 1.57
 ```
-![alt text](https://github.com/JeanJulesBigeard/Simple-mover-tutorial/blob/master/Images/Screenshot%20from%202019-11-28%2020-15-08.png)
+![alt text](https://github.com/JeanJulesBigeard/Practical-Works-Machine-Learning/blob/master/ROS%20tutorials/Simple-mover-tutorial-ROS-Gazebo-master/Images/Screenshot%20from%202019-11-28%2020-15-08.png)
 
 
 ### `look_away`: this node will subscribe to the /rgb_camera/image_raw topic, which has image data from the camera mounted on the end of the robotic arm.
